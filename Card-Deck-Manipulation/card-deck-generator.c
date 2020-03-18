@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char* colors[] = {"D", "H", "S", "C"};
+char* values[] = {"A", "2", "3", "4", "5",
+"6", "7", "8", "9", "T", "N", "Q", "K"};
+
 int calculate_string_length(char* string)
 {
   int string_length = 0;
@@ -70,8 +74,8 @@ int card_deck_bug_catcher(char** card_deck)
 {
   for(int index = 0; index < 52; index++)
   {
-    if(calculate_string_length(*(card_deck + index)) > 2 ||
-    calculate_string_length(*(card_deck + index)) > 2)
+    if(calculate_string_length(card_deck[index]) > 2 ||
+    calculate_string_length(card_deck[index]) > 2)
     { return 1; }
   }
   return 0;

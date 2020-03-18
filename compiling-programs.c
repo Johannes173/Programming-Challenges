@@ -8,7 +8,6 @@
 int main(int argc, char** argv)
 {
   char** card_deck = generate_sorted_card_deck();
-  card_deck = generate_shuffled_card_deck(card_deck);
   show_deck_of_cards(card_deck);
   return 0;
 }
