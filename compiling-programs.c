@@ -2,12 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Card-Deck-Manipulation/card-deck-manipulation.h"
-#include "Card-Deck-Manipulation/card-deck-generator.h"
+#include "Sorted-Squared-Array/sorted-squared-array.h"
 
 int main(int argc, char** argv)
 {
-  char** card_deck = generate_sorted_card_deck();
-  show_deck_of_cards(card_deck);
+  int* array = (int[]) {5, 2, 14, 7, 3, 7};
+  array = sort_squared_array(array, 6);
+  for(int index = 0; index < 6; index++)
+  {
+    printf("Square: %d\n", *(array + index));
+  }
   return 0;
 }
