@@ -17,5 +17,5 @@ Here is a list of all the folders and what the program does:
 * Competitive-Functions-Testing-6: Statistics, Probability
 * Competitive-Functions-Testing-7: Binary Operations
 
-Made by Roy Hampus Fridholm
+Made by Cool boy
 </pre>
